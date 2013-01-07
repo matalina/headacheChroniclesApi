@@ -1,0 +1,8 @@
+.DS_Store
+headache.sublime-project
+headache.sublime-workspace
+composer.json
+composer.lock
+composer.phar
+sftp-config.json
+app/config/local
