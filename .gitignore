@@ -6,3 +6,4 @@ composer.lock
 composer.phar
 sftp-config.json
 app/config/local
+app/config/live

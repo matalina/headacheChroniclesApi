@@ -42,6 +42,7 @@ $app->instance('path.base', __DIR__);
 $env = $app->detectEnvironment(array(
 
 	'local' => array('localhost', '*.dev', '*.app'),
+	'live' => array('headache.just-us.net'),
 
 ));
 

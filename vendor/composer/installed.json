@@ -794,64 +794,6 @@
         "description": "A simple wrapper around the mcrypt library."
     },
     {
-        "name": "illuminate/database",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "http://github.com/illuminate/database",
-            "reference": "c483f7ecf719d5e2483054b0f179459a16316309"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/illuminate/database/archive/c483f7ecf719d5e2483054b0f179459a16316309.zip",
-            "reference": "c483f7ecf719d5e2483054b0f179459a16316309",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "illuminate/events": "1.2.*",
-            "illuminate/support": "1.2.*"
-        },
-        "require-dev": {
-            "mockery/mockery": "0.7.2",
-            "illuminate/console": "1.2.*",
-            "illuminate/filesystem": "1.2.*",
-            "illuminate/pagination": "1.2.*",
-            "illuminate/support": "1.2.*"
-        },
-        "suggest": {
-            "illuminate/events": "Allows for catching of database query events."
-        },
-        "time": "2013-01-07 21:53:58",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.2-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Illuminate\\Database": "src/"
-            }
-        },
-        "notification-url": "http://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "An elegant database abstraction library.",
-        "keywords": [
-            "database",
-            "orm",
-            "sql",
-            "laravel"
-        ]
-    },
-    {
         "name": "illuminate/cookie",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -1500,55 +1442,6 @@
         ]
     },
     {
-        "name": "symfony/console",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "target-dir": "Symfony/Component/Console",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/Console",
-            "reference": "04325c50e6eb21c07728ecadd5e35deddea87dad"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/symfony/Console/archive/04325c50e6eb21c07728ecadd5e35deddea87dad.zip",
-            "reference": "04325c50e6eb21c07728ecadd5e35deddea87dad",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "time": "2013-01-07 11:16:36",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.2-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\Console\\": ""
-            }
-        },
-        "notification-url": "http://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Console Component",
-        "homepage": "http://symfony.com"
-    },
-    {
         "name": "illuminate/console",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -1735,18 +1628,125 @@
         "description": "A flexible, driver based authentication library."
     },
     {
+        "name": "illuminate/database",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "http://github.com/illuminate/database",
+            "reference": "7ad1c3756472c04fb403f772974045232ba7159d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/illuminate/database/archive/7ad1c3756472c04fb403f772974045232ba7159d.zip",
+            "reference": "7ad1c3756472c04fb403f772974045232ba7159d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "illuminate/events": "1.2.*",
+            "illuminate/support": "1.2.*"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.7.2",
+            "illuminate/console": "1.2.*",
+            "illuminate/filesystem": "1.2.*",
+            "illuminate/pagination": "1.2.*",
+            "illuminate/support": "1.2.*"
+        },
+        "suggest": {
+            "illuminate/events": "Allows for catching of database query events."
+        },
+        "time": "2013-01-07 22:54:20",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Illuminate\\Database": "src/"
+            }
+        },
+        "notification-url": "http://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "An elegant database abstraction library.",
+        "keywords": [
+            "database",
+            "orm",
+            "sql",
+            "laravel"
+        ]
+    },
+    {
+        "name": "symfony/console",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/Console",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Console",
+            "reference": "a843508b45383c57bef756195c3d1ab90d7ff2c4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/Console/archive/a843508b45383c57bef756195c3d1ab90d7ff2c4.zip",
+            "reference": "a843508b45383c57bef756195c3d1ab90d7ff2c4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2013-01-08 12:05:24",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Console\\": ""
+            }
+        },
+        "notification-url": "http://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "http://symfony.com"
+    },
+    {
         "name": "illuminate/foundation",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "http://github.com/illuminate/foundation",
-            "reference": "ffa3627f1b387d3039fb7f7c6458a6b871dd8ba1"
+            "reference": "c036ac76cdccd859911b7ba0f501f4eb41153c01"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/illuminate/foundation/archive/ffa3627f1b387d3039fb7f7c6458a6b871dd8ba1.zip",
-            "reference": "ffa3627f1b387d3039fb7f7c6458a6b871dd8ba1",
+            "url": "https://github.com/illuminate/foundation/archive/c036ac76cdccd859911b7ba0f501f4eb41153c01.zip",
+            "reference": "c036ac76cdccd859911b7ba0f501f4eb41153c01",
             "shasum": ""
         },
         "require": {
@@ -1783,7 +1783,7 @@
         "require-dev": {
             "mockery/mockery": "0.7.2"
         },
-        "time": "2013-01-07 22:19:20",
+        "time": "2013-01-08 14:53:56",
         "type": "library",
         "extra": {
             "branch-alias": {

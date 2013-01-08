@@ -38,4 +38,24 @@ class User extends Eloquent implements UserInterface {
 		return $this->password;
 	}
 
+	/**
+	 * Belongs to One Location
+	 *
+	 * @return relationship
+	 */
+	public function location()
+	{
+		return $this->belongs_to('Location');
+	}
+
+	/**
+	 * Has Many Headaches
+	 *
+	 * @return relationship
+	 */
+	public function headache()
+	{
+		return $this->has_many('Headache');
+	}
+
 }
