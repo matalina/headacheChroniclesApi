@@ -17,22 +17,27 @@ Route::get('/', function()
 });
 
 // Headache API Calls
-Route::get('headaches', 'HeadacheController@index'); // Get all Headaches
-Route::post('headache', 'HeadacheController@store'); // New Headache
-Route::get('headache', 'HeadacheController@show'); // Get a Headache
-Route::put('headache', 'HeadacheController@update'); // Update a Headache
-Route::delete('headache', 'HeadacheController@destroy'); // Delete a Headache
+Route::get('headaches/{api_key}/{start_date?}/{end_date?}', 'HeadacheController@index'); // Get all Headaches
+Route::post('headache/{api_key}', 'HeadacheController@store'); // New Headache
+Route::get('headache/{api_key}/{id}', 'HeadacheController@show'); // Get a Headache
+Route::put('headache/{api_key}/{id}', 'HeadacheController@update'); // Update a Headache
+Route::delete('headache/{api_key}/{id}', 'HeadacheController@destroy'); // Delete a Headache
 
 // Weather API Calls
-Route::get('weathers', 'WeatherController@index'); // Get all Weathers
-Route::post('weather', 'WeatherController@store'); // New Weather
-Route::get('weather', 'WeatherController@show'); // Get a Weather
-Route::put('weather', 'WeatherController@update'); // Update a Weather
-Route::delete('weather', 'WeatherController@destroy'); // Delete a Weather
+Route::get('weathers/{api_key}/{start_date?}/{end_date?}', 'WeatherController@index'); // Get all Weathers
+Route::post('weather{api_key}', 'WeatherController@store'); // New Weather
+Route::get('weather{api_key}/{id}', 'WeatherController@show'); // Get a Weather
+Route::put('weather{api_key}/{id}', 'WeatherController@update'); // Update a Weather
+Route::delete('weather{api_key}/{id}', 'WeatherController@destroy'); // Delete a Weather
 
 //Sync API Calls
-Route::get('compare/user','SyncController@compareUser'); // Compare Users online/offline
-Route::get('compare/headaches', 'SyncController@compareHeadaches'); // Compare Headaches online/offline
-Route::post('sync/user', 'SyncController@syncUser'); // Sync User online/offline
-Route::post('sync/headaches', 'SyncController@syncHeadaches'); // Sync Headaches online/offline
-Route::post('sync/weather', 'SyncController@syncWeather'); // Sync Weather offline
+Route::get('compare/user/{api_key}/{digest}','SyncController@compareUser'); // Compare Users online/offline
+Route::get('compare/headaches/{api_key}/{digest}', 'SyncController@compareHeadaches'); // Compare Headaches online/offline
+Route::post('sync/user/{api_key}', 'SyncController@syncUser'); // Sync User online/offline
+Route::post('sync/headaches/{api_key}', 'SyncController@syncHeadaches'); // Sync Headaches online/offline
+Route::post('sync/weather/{api_key}', 'SyncController@syncWeather'); // Sync Weather offline
+
+// Auth Calls
+Route::post('login', 'AuthController@login');
+Route::get('logout', 'AuthController@logout');
+Route::resource('auth', 'AuthController');

@@ -16,7 +16,7 @@ class Location extends Eloquent
 	 */
 	public function weather()
 	{
-		return $this->has_many('Weather');
+		return $this->hasMany('Weather');
 	}
 
 	/**
@@ -26,6 +26,6 @@ class Location extends Eloquent
 	 */
 	public function user()
 	{
-		return this->has_many('User');
+		return $this->hasMany('User');
 	}
 }

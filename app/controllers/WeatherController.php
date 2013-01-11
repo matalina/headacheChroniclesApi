@@ -9,7 +9,24 @@ class WeatherController extends BaseController {
 	 */
 	public function index($api_key, $start_date = NULL, $end_date = NULL)
 	{
-		//
+		$api = new Api();
+		$user = $api->getUser($api_key);
+
+		if($user !== NULL) {
+			// Processing Code Here
+		}
+		else if($user === false) {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'Incorrect API key sent.'
+			));
+		}
+		else {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'A User does not exist with that API key'
+			));
+		}
 	}
 
 	/**
@@ -19,7 +36,24 @@ class WeatherController extends BaseController {
 	 */
 	public function store($api_key)
 	{
-		//
+		$api = new Api();
+		$user = $api->getUser($api_key);
+
+		if($user !== NULL) {
+			// Processing Code Here
+		}
+		else if($user === false) {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'Incorrect API key sent.'
+			));
+		}
+		else {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'A User does not exist with that API key'
+			));
+		}
 	}
 
 	/**
@@ -29,7 +63,24 @@ class WeatherController extends BaseController {
 	 */
 	public function show($api_key, $id)
 	{
-		//
+		$api = new Api();
+		$user = $api->getUser($api_key);
+
+		if($user !== NULL) {
+			// Processing Code Here
+		}
+		else if($user === false) {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'Incorrect API key sent.'
+			));
+		}
+		else {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'A User does not exist with that API key'
+			));
+		}
 	}
 
 	/**
@@ -39,7 +90,24 @@ class WeatherController extends BaseController {
 	 */
 	public function update($api_key, $id)
 	{
-		//
+		$api = new Api();
+		$user = $api->getUser($api_key);
+
+		if($user !== NULL) {
+			// Processing Code Here
+		}
+		else if($user === false) {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'Incorrect API key sent.'
+			));
+		}
+		else {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'A User does not exist with that API key'
+			));
+		}
 	}
 
 	/**
@@ -49,7 +117,24 @@ class WeatherController extends BaseController {
 	 */
 	public function destroy($api_key, $id)
 	{
-		//
+		$api = new Api();
+		$user = $api->getUser($api_key);
+
+		if($user !== NULL) {
+			// Processing Code Here
+		}
+		else if($user === false) {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'Incorrect API key sent.'
+			));
+		}
+		else {
+			return Response::json(array(
+				'code' => '401',
+				'data' => 'A User does not exist with that API key'
+			));
+		}
 	}
 
 }

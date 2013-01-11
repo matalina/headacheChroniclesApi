@@ -16,6 +16,6 @@ class Weather extends Eloquent
 	 */
 	public function location()
 	{
-		return $this->belongs_to('Location');
+		return $this->belongsTo('Location');
 	}
 }
